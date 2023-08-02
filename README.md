@@ -10,3 +10,5 @@ Desenvolvido em C#, DotNet 7, Entity Framework 7, MySQL
 CQRS acessando e devolvendo as consultas por DTOs e nao usei AutoMapper ou MediatR
 
 Proximo projeto, sera usando esses Frameworks par acompanhar o desempenho no desenvolvimento.
+
+Foi imoplementado tb, o Unit of Work para poder termos acesso seguro na hora do Commit na base dados
