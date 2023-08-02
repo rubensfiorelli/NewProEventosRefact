@@ -14,9 +14,24 @@ namespace Pro3ventos.Data.Input.Repositories
         }
 
 
-        public Task<Evento> InsertEvento(Evento evento)
+        public async Task<Evento> InsertEvento(Evento evento)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (_context)
+                {
+                    _context.Eventos.Add(evento);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            return evento;
+
         }
 
         public async Task<bool> Commit()
